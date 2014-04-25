@@ -1,0 +1,138 @@
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+	background:-webkit-gradient(linear,0 0,0 bottom,from(#6b4a70),to(#bb457c));
+	background:-webkit-linear-gradient(#6b4a70,#bb457c);
+	background:linear-gradient(#6b4a70,#bb457c);
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-focus-ring-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+/* For some Androids */
+}
+:focus {
+  outline: 0;
+  border: none;
+  color: rgba(0,0,0,0);
+}
+
+.page { 
+	display:table;
+	overflow:hidden;
+	margin:0px auto;
+	width: 1200px;
+	height: 750px;
+	max-width: 1200px;
+}
+
+.content_container {
+	display:table-cell;
+	vertical-align: middle;
+	
+}
+
+.content {
+	position: relative;
+}
+
+.content ul, .content li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.content .slides {
+	position: absolute;
+	width: 1200px;
+	height: 750px;
+	display:block;
+	top:0;
+	left: 0;
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+   	-webkit-transition: opacity .5s ease-in-out;
+}
+
+.content .slides.final-msj {
+	-webkit-transition: -webkit-mask-position 1.5s ease;		
+	-webkit-mask-size: 2560px 1600px;
+	display:block !important;
+	-webkit-mask-image: -webkit-gradient(linear, left top, right top, 
+			color-stop(0.00,  rgba(0,0,0,1)),
+			color-stop(0.35,  rgba(0,0,0,1)),
+			color-stop(0.50,  rgba(0,0,0,0)),
+			color-stop(0.75,  rgba(0,0,0,0)),
+			color-stop(1.00,  rgba(0,0,0,0)));
+	-webkit-mask-position: -1200px -750px;
+}
+
+.content .slides.final-msj.wipe {
+	-webkit-mask-position: 0px 0px;
+	opacity: 1 !important;
+}
+
+
+.content .slides.selected {
+	display:block;
+	opacity: 1;
+}
+
+.content .blank {
+	width:100%;
+	display:block;
+	z-index: -1;
+}
+
+.pastilla {
+	width: 5%;
+	top: 53%;
+	left: 31%;
+	border-radius: 10px 91px 88px 34px;
+}
+
+.pastilla.item img {
+	width: 120%;
+	margin-left: -4px;
+}
+
+.aerosol {
+	width: 2.5%;
+	top: 40%;
+	left: 78%;
+}
+
+.item {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	transition: opacity .5s ease-in-out;
+   	-webkit-transition: opacity .5s ease-in-out;
+}
+.item img{
+	display:block;
+	width: 100%;
+}
+
+.fade {
+	opacity: 1 !important;
+	
+}
+
+.item {
+    -webkit-animation: glow 1s infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    to {
+        box-shadow: 0 0 20px 5px white;
+    }
+}
