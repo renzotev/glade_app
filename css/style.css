@@ -26,18 +26,21 @@ body {
 }
 
 .page { 
-	display:table;
-	overflow:hidden;
-	margin:0px auto;
+	margin: 0px auto;
 	width: 1200px;
 	height: 750px;
 	max-width: 1200px;
+	margin-top: -375px;
+	top: 50%;
+	position: relative;
 }
 
 .content_container {
-	display:table-cell;
-	vertical-align: middle;
-	
+	width: 1200px;
+	height: 750px;
+	background-image: url("../img/banio-background.png");
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .content {
@@ -57,13 +60,20 @@ body {
 	display:block;
 	top:0;
 	left: 0;
-	opacity: 0;
+	opacity: 1;
 	transition: opacity .5s ease-in-out;
    	-webkit-transition: opacity .5s ease-in-out;
 }
 
-.content .slides.final-msj {
-	-webkit-transition: -webkit-mask-position 1.5s ease;		
+.content .final-msj {
+	position: absolute;
+	width: 1200px;
+	height: 750px;
+	display:block;
+	top:0;
+	left: 0;
+	opacity: 0;
+	/*-webkit-transition: -webkit-mask-position 1.5s ease;		
 	-webkit-mask-size: 2560px 1600px;
 	display:block !important;
 	-webkit-mask-image: -webkit-gradient(linear, left top, right top, 
@@ -72,19 +82,14 @@ body {
 			color-stop(0.50,  rgba(0,0,0,0)),
 			color-stop(0.75,  rgba(0,0,0,0)),
 			color-stop(1.00,  rgba(0,0,0,0)));
-	-webkit-mask-position: -1200px -750px;
+	-webkit-mask-position: -1200px -750px;*/
 }
-
-.content .slides.final-msj.wipe {
+/*
+.content .final-msj.wipe {
 	-webkit-mask-position: 0px 0px;
 	opacity: 1 !important;
-}
+}*/
 
-
-.content .slides.selected {
-	display:block;
-	opacity: 1;
-}
 
 .content .blank {
 	width:100%;
@@ -93,10 +98,10 @@ body {
 }
 
 .pastilla {
-	width: 5%;
-	top: 53%;
-	left: 31%;
+	top: 380px;
+	left: 370px;
 	border-radius: 10px 91px 88px 34px;
+	width: 60px;
 }
 
 .pastilla.item img {
@@ -105,9 +110,9 @@ body {
 }
 
 .aerosol {
-	width: 2.5%;
-	top: 40%;
-	left: 78%;
+	width: 30px;
+	top: 300px;
+	left: 920px;
 }
 
 .item {
@@ -123,7 +128,7 @@ body {
 }
 
 .fade {
-	opacity: 1 !important;
+	opacity: 0 !important;
 	
 }
 
