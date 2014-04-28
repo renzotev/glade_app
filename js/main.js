@@ -18,7 +18,7 @@ function onDeviceReady() {
   }
 
   FastClick.attach(document.body);
-  
+
   document.addEventListener("backbutton", backKeyDown, true);
 
   $(".slides.presentation").on("click", function () {
@@ -28,16 +28,26 @@ function onDeviceReady() {
 
   $("#aerosol").on("click", function () {
     playAudio("bells-short.mp3");
-    $(".banio2").addClass("fade");  
-    $("#aerosol").addClass("fade");
-    $("#pastilla").css("opacity", "1");
+    $(this).addClass("fade-item");
+      setTimeout(function(){
+        $("#aerosol").css("opacity", "0");
+        setTimeout(function(){
+          $(".banio2").addClass("fade"); 
+          $("#pastilla").css("opacity", "1");
+        }, 1000);
+      }, 2000);
   });
 
   $("#pastilla").on("click", function () {
     playAudio("bells-large.mp3");
-    $(this).addClass("fade"); 
-    $(".banio1").addClass("fade");
-    $(".final-msj").css("opacity", "1");
+    $(this).addClass("fade-item");
+      setTimeout(function(){
+        $("#pastilla").css("opacity", "0");
+        setTimeout(function(){
+          $(".banio1").addClass("fade");
+          $(".final-msj").css("opacity", "1");
+        }, 1000);
+      }, 2000);
   });
 
   /*var init = function () {

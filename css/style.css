@@ -98,15 +98,10 @@ body {
 }
 
 .pastilla {
-	top: 380px;
+	top: 404px;
 	left: 370px;
-	border-radius: 10px 91px 88px 34px;
+	/*border-radius: 10px 91px 88px 34px;*/
 	width: 60px;
-}
-
-.pastilla.item img {
-	width: 120%;
-	margin-left: -4px;
 }
 
 .aerosol {
@@ -127,6 +122,12 @@ body {
 	width: 100%;
 }
 
+.fade-item {
+	transition: all .5s ease-in-out;
+	-webkit-transform: scale(2,2); /* Chrome, Safari, Opera */
+	transform: scale(2,2);
+}
+
 .fade {
 	opacity: 0 !important;
 	
@@ -139,5 +140,7 @@ body {
 @-webkit-keyframes glow {
     to {
         box-shadow: 0 0 20px 5px white;
+        border-radius: 6%;
+        background: rgba(255,255,255,.5);
     }
 }
