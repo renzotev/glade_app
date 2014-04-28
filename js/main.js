@@ -15,25 +15,24 @@ function onDeviceReady() {
 
   $(".slides.presentation").on("click", function () {
     $(this).addClass("fade"); 
-    playAudio("bells-short.mp3");
     setTimeout(function(){
          $("#aerosol").css("opacity", "1");
      }, 2000);
   });
 
   $("#aerosol").on("click", function () {
+    playAudio("bells-short.mp3");
     $(".banio2").addClass("fade");  
     $("#aerosol").addClass("fade");
-    playAudio("bells-short.mp3");
     setTimeout(function(){
          $("#pastilla").css("opacity", "1");
      }, 2000);
   });
 
   $("#pastilla").on("click", function () {
+    playAudio("bells-large.mp3");
     $(this).addClass("fade"); 
     $(".banio1").addClass("fade");
-    playAudio("bells-large.mp3");
     setTimeout(function(){
          $(".final-msj").css("opacity", "1");
      }, 2000);
