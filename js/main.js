@@ -17,7 +17,7 @@ function onDeviceReady() {
       my_media.play();
   }
 
-  FastClick.attach(document.body);
+  //FastClick.attach(document.body);
 
   document.addEventListener("backbutton", backKeyDown, true);
 
