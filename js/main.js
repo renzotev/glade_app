@@ -1,7 +1,9 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-    
+  
+  FastClick.attach(document.body);  
+
   function playAudio(url) {
       var my_media = new Media("/android_asset/www/sound/"+url,
               // success callback
