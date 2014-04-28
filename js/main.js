@@ -1,6 +1,6 @@
-/*document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 
-function onDeviceReady() {*/
+function onDeviceReady() {
     
   function playAudio(url) {
       var my_media = new Media("/android_asset/www/sound/"+url,
@@ -43,6 +43,4 @@ function onDeviceReady() {*/
 
   }*/
 
-
-
-//}
+}
