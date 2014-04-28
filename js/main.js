@@ -27,26 +27,26 @@ function onDeviceReady() {
   });
 
   $("#aerosol").on("click", function () {
-    playAudio("bells-short.mp3");
     $(this).addClass("fade-item");
       setTimeout(function(){
         $("#aerosol").css("opacity", "0");
         setTimeout(function(){
           $(".banio2").addClass("fade"); 
           $("#pastilla").css("opacity", "1");
-        }, 1000);
+          playAudio("bells-short.mp3");
+        }, 300);
       }, 2000);
   });
 
   $("#pastilla").on("click", function () {
-    playAudio("bells-large.mp3");
     $(this).addClass("fade-item");
       setTimeout(function(){
         $("#pastilla").css("opacity", "0");
         setTimeout(function(){
           $(".banio1").addClass("fade");
           $(".final-msj").css("opacity", "1");
-        }, 1000);
+          playAudio("bells-large.mp3");
+        }, 300);
       }, 2000);
   });
 
