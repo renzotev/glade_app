@@ -2,7 +2,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
   
-  FastClick.attach(document.body);  
+  function backKeyDown() {
+    navigator.app.exitApp(); // To exit the app!
+  }  
 
   function playAudio(url) {
       var my_media = new Media("/android_asset/www/sound/"+url,
@@ -15,6 +17,9 @@ function onDeviceReady() {
       my_media.play();
   }
 
+  FastClick.attach(document.body);
+  document.addEventListener("backbutton", backKeyDown, true);
+  
   $(".slides.presentation").on("click", function () {
     $(this).addClass("fade"); 
     $("#aerosol").css("opacity", "1");
