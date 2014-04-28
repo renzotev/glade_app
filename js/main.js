@@ -15,27 +15,21 @@ function onDeviceReady() {
 
   $(".slides.presentation").on("click", function () {
     $(this).addClass("fade"); 
-    setTimeout(function(){
-         $("#aerosol").css("opacity", "1");
-     }, 2000);
+    $("#aerosol").css("opacity", "1");
   });
 
   $("#aerosol").on("click", function () {
     playAudio("bells-short.mp3");
     $(".banio2").addClass("fade");  
     $("#aerosol").addClass("fade");
-    setTimeout(function(){
-         $("#pastilla").css("opacity", "1");
-     }, 2000);
+    $("#pastilla").css("opacity", "1");
   });
 
   $("#pastilla").on("click", function () {
     playAudio("bells-large.mp3");
     $(this).addClass("fade"); 
     $(".banio1").addClass("fade");
-    setTimeout(function(){
-         $(".final-msj").css("opacity", "1");
-     }, 2000);
+    $(".final-msj").css("opacity", "1");
   });
 
   /*var init = function () {
