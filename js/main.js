@@ -17,9 +17,11 @@ function onDeviceReady() {
       my_media.play();
   }
 
-  FastClick.attach(document.body);
-  document.addEventListener("backbutton", backKeyDown, true);
+  var attachFastClick = require('fastclick');
+  attachFastClick(document.body);
   
+  document.addEventListener("backbutton", backKeyDown, true);
+
   $(".slides.presentation").on("click", function () {
     $(this).addClass("fade"); 
     $("#aerosol").css("opacity", "1");
