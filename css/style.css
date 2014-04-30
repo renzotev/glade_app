@@ -74,6 +74,8 @@ body {
 	top:0;
 	left: 0;
 	opacity: 1;
+	background-position: center center;
+	background-repeat: no-repeat;
 	transition: opacity .5s ease-in-out;
    	-webkit-transition: opacity .5s ease-in-out;
 }
@@ -146,8 +148,7 @@ body {
 }
 
 .fade-item {
-	transition-property: left,transform;
-	transition-duration: .3s, .3s;
+	transition: all .5s ease-in-out;
 	-webkit-transform: scale(2,2); /* Chrome, Safari, Opera */
 	transform: scale(2,2);
 	left: 50%;

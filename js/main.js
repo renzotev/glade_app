@@ -1,5 +1,3 @@
-document.addEventListener("deviceready", onDeviceReady, false);
-
 function onDeviceReady() {
   
   function backKeyDown() {
@@ -19,6 +17,7 @@ function onDeviceReady() {
 
   FastClick.attach(document.body);
 
+  document.addEventListener("deviceready", onDeviceReady, false);
   document.addEventListener("backbutton", backKeyDown, true);
 
    var game_one = function () {
