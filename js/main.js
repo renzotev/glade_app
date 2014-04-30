@@ -1,4 +1,6 @@
-document.addEventListener("deviceready", onDeviceReady, false);
+function playAudio(url) { }
+
+/*document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
   
@@ -19,7 +21,7 @@ function onDeviceReady() {
 
   FastClick.attach(document.body);
 
-  document.addEventListener("backbutton", backKeyDown, true);
+  document.addEventListener("backbutton", backKeyDown, true);*/
 
    var game_one = function () {
 
@@ -106,7 +108,7 @@ function onDeviceReady() {
       $(".sala1").addClass("fade");
       playAudio("bells-short.mp3");
 
-        $("#aerosol2").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
+        $("#glade-toque").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
           function(e) {
             setTimeout(function(){
               $("#glade-toque").css("opacity", "0");
@@ -144,4 +146,4 @@ function onDeviceReady() {
 
   init();
 
-}
+//}

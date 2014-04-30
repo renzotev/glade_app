@@ -27,17 +27,17 @@ body {
 
 .page { 
 	margin: 0px auto;
-	width: 1200px;
-	height: 750px;
-	max-width: 1200px;
-	margin-top: -375px;
+	width: 1280px;
+	height: 800px;
+	max-width: 1280px;
+	margin-top: -400px;
 	top: 50%;
 	position: relative;
 }
 
 .content_container {
-	width: 1200px;
-	height: 750px;	
+	width: 1280px;
+	height: 800px;	
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -68,8 +68,8 @@ body {
 
 .content .slides {
 	position: absolute;
-	width: 1200px;
-	height: 750px;
+	width: 1280px;
+	height: 800px;
 	display:block;
 	top:0;
 	left: 0;
@@ -80,8 +80,8 @@ body {
 
 .content .final-msj {
 	position: absolute;
-	width: 1200px;
-	height: 750px;
+	width: 1280px;
+	height: 800px;
 	display:block;
 	top:0;
 	left: 0;
@@ -95,7 +95,7 @@ body {
 			color-stop(0.50,  rgba(0,0,0,0)),
 			color-stop(0.75,  rgba(0,0,0,0)),
 			color-stop(1.00,  rgba(0,0,0,0)));
-	-webkit-mask-position: -1200px -750px;*/
+	-webkit-mask-position: -1280px -800px;*/
 }
 /*
 .content .final-msj.wipe {
@@ -146,11 +146,12 @@ body {
 }
 
 .fade-item {
-	transition: all .5s ease-in-out;
+	transition-property: left,transform;
+	transition-duration: .3s, .3s;
 	-webkit-transform: scale(2,2); /* Chrome, Safari, Opera */
 	transform: scale(2,2);
 	left: 50%;
-	top: 300px;
+	/*top: 300px;*/
 }
 
 .fade {
@@ -158,13 +159,13 @@ body {
 	
 }
 
-.item {
-    -webkit-animation: glow 1s infinite alternate;
+/*.item {
+    -webkit-animation: bounce .2s infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@-webkit-keyframes bounce {
     to {
-    	-webkit-filter: drop-shadow( 0 0 20px #FFFFFF );
-        filter: drop-shadow( 0 0 20px #FFFFFF );
+    	-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
     }
-}
+}*/
