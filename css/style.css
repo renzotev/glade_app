@@ -164,8 +164,7 @@ body {
 
 @-webkit-keyframes glow {
     to {
-        box-shadow: 0 0 20px 5px white;
-        border-radius: 6%;
-        background: rgba(255,255,255,.5);
+    	-webkit-filter: drop-shadow( 0 0 20px #FFFFFF );
+        filter: drop-shadow( 0 0 20px #FFFFFF );
     }
 }
