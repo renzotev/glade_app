@@ -73,12 +73,13 @@ function onDeviceReady() {
 
                 $(".one .final-msj").on("click", function () {
                   $(".one").css("opacity", "0");
+                  $(".two").css("display", "block");
+                  $(".two").css("opacity", "1");
                   $(".one").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
                     function(e) { 
-                      $(".one").hide();
-                      $(".two").show();
+                      $(".one").css("display","none");
                   });
-                  $(".two").css("opacity", "1");
+                  
                   $("#aerosol").css("opacity", "1");
 
                   $("#aerosol").removeClass("fade-item");
@@ -136,12 +137,13 @@ function onDeviceReady() {
 
                 $(".two .final-msj").on("click", function () {
                   $(".two").css("opacity", "0");
+                  $(".one").css("display", "block");
+                  $(".one").css("opacity", "1");
                   $(".two").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
                     function(e) { 
-                      $(".two").hide();
-                      $(".one").show();
+                      $(".two").css("display","none");
                   });
-                  $(".one").css("opacity", "1");
+                  
                   $("#aerosol").css("opacity", "1");
                   
 
