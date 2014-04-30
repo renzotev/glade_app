@@ -53,7 +53,7 @@ body {
 
 .content_container.two {
 	background-image: url("../img/banio-background.png");
-	top: -1000px
+	display: none;
 }
 
 .content {
