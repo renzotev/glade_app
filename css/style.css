@@ -48,12 +48,12 @@ body {
 }
 
 .content_container.one {
-	background-image: url("../img/banio-background.png");
+	background-image: url("../img/sala-background.png");
 }
 
 .content_container.two {
-	background-image: url("../img/sala-background.png");
-	left: 200%
+	background-image: url("../img/banio-background.png");
+	top: -1000px
 }
 
 .content {
@@ -111,26 +111,26 @@ body {
 }
 
 .pastilla {
-	top: 404px;
-	left: 370px;
+	top: 430px;
+	left: 403px;
 	width: 60px;
 	/*border-radius: 10px 91px 88px 34px;*/
 }
 
 .aerosol {
-	top: 300px;
-	left: 920px;
+	top: 325px;
+	left: 1000px;
 	width: 30px
 }
 
 .aerosol2 {
-	top: 359px;
-	left: 635px;
+	top: 391px;
+	left: 671px;
 }
 
 .glade-toque {
-	top: 370px;
-	left: 145px;
+	top: 397px;
+	left: 160px;
 }
 
 .item {
