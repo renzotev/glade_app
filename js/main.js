@@ -144,8 +144,6 @@ function onDeviceReady() {
                       $(".two").css("display","none");
                   });
                   
-                  $("#aerosol2").css("opacity", "1");
-                  
 
                   $(".slides.presentation").removeClass("fade"); 
                   $("#aerosol2").removeClass("fade-item");
