@@ -138,8 +138,8 @@ function onDeviceReady() {
                   $(".one").css("opacity", "1");
                   $(".one").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
                     function(e) { 
-                      $(".one").show("fast");
-                      $(".two").hide("fast");
+                      $(".one").show();
+                      $(".two").hide();
                   });
                   $(".two").css("opacity", "0");
 
