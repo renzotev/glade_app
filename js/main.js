@@ -135,13 +135,14 @@ function onDeviceReady() {
                 playAudio("bells-large.mp3");
 
                 $(".two .final-msj").on("click", function () {
+                  $(".one").show();
                   $(".one").css("opacity", "1");
-                  $(".one").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
+                  $(".two").css("opacity", "0");
+                  $(".two").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
                     function(e) { 
-                      $(".one").show();
                       $(".two").hide();
                   });
-                  $(".two").css("opacity", "0");
+                  
 
                   $(".slides.presentation").removeClass("fade"); 
                   $("#aerosol2").removeClass("fade-item");
