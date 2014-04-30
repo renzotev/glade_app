@@ -55,7 +55,7 @@ function onDeviceReady() {
 
       $(this).addClass("fade-item");
       $(".sala1").addClass("fade");
-      playAudio("bells-large.mp3");
+      playAudio("bells-short.mp3");
 
 
       $("#glade-toque").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
@@ -65,10 +65,11 @@ function onDeviceReady() {
 
               setTimeout(function(){
                 $(".one .final-msj").css({"opacity": "1", "z-index": "44"});
+                playAudio("bells-large.mp3");
 
                 $(".one .final-msj").on("click", function () {
-                  $(".one").css("top", "-1000px");
-                  $(".two").css("top", "0");
+                  $(".one").hide("fast");
+                  $(".two").show("fast");
                   $("#aerosol").css("opacity", "1");
 
                   $("#aerosol").removeClass("fade-item");
@@ -121,8 +122,8 @@ function onDeviceReady() {
                 playAudio("bells-large.mp3");
 
                 $(".two .final-msj").on("click", function () {
-                  $(".one").css("top", "0");
-                  $(".two").css("top", "-1000px");
+                  $(".one").show("fast");
+                  $(".two").hide("fast");
 
                   $(".slides.presentation").removeClass("fade"); 
                   $("#aerosol2").removeClass("fade-item");
