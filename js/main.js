@@ -75,10 +75,9 @@ function onDeviceReady() {
                   $(".one").css("opacity", "0");
                   $(".two").css("display", "block");
                   $(".two").css("opacity", "1");
-                  $(".two").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
-                    function(e) { 
-                      $(".one").css("display","none");
-                  });
+                  setTimeout(function(){ 
+                    $(".one").css("display","none");
+                  }, 3500);
                   
                   $("#aerosol").css("opacity", "1");
 
@@ -139,10 +138,9 @@ function onDeviceReady() {
                   $(".two").css("opacity", "0");
                   $(".one").css("display", "block");
                   $(".one").css("opacity", "1");
-                  $(".one").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
-                    function(e) { 
-                      $(".two").css("display","none");
-                  });
+                  setTimeout(function(){ 
+                    $(".two").css("display","none");
+                  }, 3500);
                   
 
                   $(".slides.presentation").removeClass("fade"); 
