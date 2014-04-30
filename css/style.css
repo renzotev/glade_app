@@ -54,6 +54,7 @@ body {
 .content_container.two {
 	background-image: url("../img/banio-background.png");
 	display: none;
+	opacity: 0;
 }
 
 .content {
@@ -156,7 +157,9 @@ body {
 }
 
 .fade {
-	opacity: 0 !important;
+	transition: opacity .5s ease-in-out;
+   	-webkit-transition: opacity .5s ease-in-out;
+   	opacity: 0 !important;
 	
 }
 
