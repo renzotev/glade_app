@@ -35,10 +35,12 @@ function onDeviceReady() {
 
         $(this).addClass("fade-item");
         $(".sala2").addClass("fade"); 
-        playAudio("bells-short.mp3");
+        
 
         $("#aerosol2").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
           function(e) {
+            playAudio("bells-short.mp3");
+
             setTimeout(function(){
               $("#glade-toque").css("opacity", "1");
               $("#aerosol2").css("opacity", "0");
@@ -55,11 +57,13 @@ function onDeviceReady() {
 
       $(this).addClass("fade-item");
       $(".sala1").addClass("fade");
-      playAudio("bells-short.mp3");
+      
 
 
       $("#glade-toque").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
           function(e) {
+            playAudio("bells-short.mp3");
+
             setTimeout(function(){
               $("#glade-toque").css("opacity", "0");
 
@@ -68,8 +72,13 @@ function onDeviceReady() {
                 playAudio("bells-large.mp3");
 
                 $(".one .final-msj").on("click", function () {
-                  $(".one").hide("fast");
-                  $(".two").show("fast");
+                  $(".one").css("opacity", "0");
+                  $(".one").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
+                    function(e) { 
+                      $(".one").hide();
+                      $(".two").show();
+                  });
+                  $(".two").css("opacity", "1");
                   $("#aerosol").css("opacity", "1");
 
                   $("#aerosol").removeClass("fade-item");
@@ -93,10 +102,12 @@ function onDeviceReady() {
 
         $(this).addClass("fade-item");
         $(".banio2").addClass("fade"); 
-        playAudio("bells-short.mp3");
+        
 
         $("#aerosol").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
           function(e) {
+            playAudio("bells-short.mp3");
+
             setTimeout(function(){
               $("#aerosol").css("opacity", "0");
               $("#pastilla").css("opacity", "1");
@@ -109,10 +120,12 @@ function onDeviceReady() {
 
       $(this).addClass("fade-item");
       $(".banio1").addClass("fade");
-      playAudio("bells-short.mp3");
+      
 
         $("#pastilla").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
           function(e) {
+            playAudio("bells-short.mp3");
+
             setTimeout(function(){
               $("#pastilla").css("opacity", "0");
 
@@ -122,8 +135,13 @@ function onDeviceReady() {
                 playAudio("bells-large.mp3");
 
                 $(".two .final-msj").on("click", function () {
-                  $(".one").show("fast");
-                  $(".two").hide("fast");
+                  $(".one").css("opacity", "1");
+                  $(".one").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
+                    function(e) { 
+                      $(".one").show("fast");
+                      $(".two").hide("fast");
+                  });
+                  $(".two").css("opacity", "0");
 
                   $(".slides.presentation").removeClass("fade"); 
                   $("#aerosol2").removeClass("fade-item");
