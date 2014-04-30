@@ -75,7 +75,7 @@ function onDeviceReady() {
                   $(".one").css("opacity", "0");
                   $(".two").css("display", "block");
                   $(".two").css("opacity", "1");
-                  $(".one").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
+                  $(".two").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
                     function(e) { 
                       $(".one").css("display","none");
                   });
@@ -139,12 +139,12 @@ function onDeviceReady() {
                   $(".two").css("opacity", "0");
                   $(".one").css("display", "block");
                   $(".one").css("opacity", "1");
-                  $(".two").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
+                  $(".one").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 
                     function(e) { 
                       $(".two").css("display","none");
                   });
                   
-                  $("#aerosol").css("opacity", "1");
+                  $("#aerosol2").css("opacity", "1");
                   
 
                   $(".slides.presentation").removeClass("fade"); 
