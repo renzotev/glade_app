@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.glade.dia_madre"
+    id        = "com.glade.juego_productos"
     version   = "1.0.0">
 
-<name>Griswold Glade</name>
+<name>GRISWOLD GLADE</name>
 
 <description>
-	Aplicación para el día de la madre
-</description>
+	Aplicación de glade
 
 <author href="http://www.facebook.com/renzotev" email="renzotelenta@gmail.com">
 	Renzo Telenta
